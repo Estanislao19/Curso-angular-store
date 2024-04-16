@@ -1,0 +1,7 @@
+<div>
+  <img [src]="product.images" [alt]="product.title">
+  <h3> {{product.title | uppercase}}</h3>
+  <p>{{product.price | currency:'$':'symbol':'1.0'}}</p>
+  <p>{{product.creationAt | timeAgo}}</p>
+  <button (click)="addToCartHandler()">Add to cart</button>
+</div>
